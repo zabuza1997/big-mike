@@ -1,0 +1,30 @@
+
+body {
+    width: 1101px;
+    height: 1558px; 
+    border: 3px solid black;
+}
+.album-cover {
+  
+}
+.cover-img {
+    width: 1101px;
+    height: 600px; 
+    object-fit: cover;;
+  }
+.logo-img {
+    object-position: left top;
+}
+.album-content{
+    
+}
+.album-header {
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+}
+.content-box {
+    margin: 1rem;
+    border: 3px solid black;
+}

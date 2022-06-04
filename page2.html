@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="page2.css" />
+    <title>Document</title>
+  </head>
+  <body class="pt-16">
+    <div
+      class="container h-full flex flex-col  border-solid border-black border-2"
+    >
+      <!--Artist sound-->
+      <div class="section flex flex-col relative mb-16">
+        <div class="section-header">
+          <h2
+            class="text-7xl uppercase w-max mx-auto px-4 flex gap-24 bg-white"
+            style="transform: translateY(-2.625rem)"
+          >
+            <span>artist</span><span>sounds</span>
+          </h2>
+        </div>
+        <div class="section-content flex w-full justify-around">
+          <div class="genres text-center w-full ml-24">
+            AFROBEATS<br />GERMAN<br />AFROSWING<br />RAP<br />DRILl
+          </div>
+          <div class="works flex w-full gap-x-4">
+            <div class="album">
+              <img
+                src="./img/album.jpg"
+                alt=""
+                class="album-img"
+                width="150px"
+                height="150px"
+              />
+              <p>Album name</p>
+            </div>
+            <div class="single">
+              <img
+                src="./img//single.jpg"
+                alt=""
+                class="single-img"
+                width="150px"
+                height="150px"
+              />
+              <p>Single name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Ref-->
+      <div class="section border-solid border-black border-t-2 border-b-2 pb-48 pt-8">
+        <div class="section-header">
+          <h2
+            class="text-5xl uppercase w-max mx-auto bg-white px-4 tracking-widest"
+            style="transform: translateY(-3.75rem)"
+          >
+            references
+          </h2>
+        </div>
+        <div class="section-content uppercase font-semibold grid place-items-center">
+          <span id="ad" class="relative">AFRICAN DIASPORA</span>
+          <p class="relative mt-2 text-right" id="mvm">BE PART OF THE <br />
+            MOVEMENT</p>
+          </div>
+        </div>
+
+        <!--Videos-->
+      <div class="section border-solid border-black border-t-2 border-b-2 pb-24">
+        <div class="section-header">
+          <h2
+            class="text-5xl uppercase w-max mx-auto bg-white px-4"
+            style="transform: translateY(-1.75rem)"
+          >
+            Videos & Live
+          </h2>
+        </div>
+        <div class="section-content">
+          <div class="flex w-full justify-around">
+            <div>
+              <i>Music Video</i>
+              <img src="./img/thumb1.jpg" alt="Thumbnail">
+            </div>
+            <div>
+              <strong>Performance at</strong>
+              <img src="./img/thumb2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!--Socials-->
+      <div class="section border-solid border-black border-t-2 border-b-2 pb-24">
+        <div class="section-header">
+            <h2  class="text-5xl uppercase w-max mx-auto bg-white px-4"
+            style="transform: translateY(-1.75rem)">Artist Socials</h2>
+        </div>
+        <div class="section-content flex justify-center items-center">
+            <!--Youtube-->
+            <div class="social">
+                <img src="./img/yt.png" alt="">
+            </div>
+            <!--Spot-->
+            <div class="social">
+                <img src="./img/spot.png" alt="">
+            </div>
+            <!--Insta-->
+            <div class="social">
+                <img src="./img/ig.png" alt="">
+            </div>
+            <!--Facebook-->
+            <div class="social">
+                <img src="./img/fb.png" alt="" height="80px" width="80px">
+            </div>
+        </div>
+      </div>
+      </div>
+    
+    </div>
+
+    <style>
+      #ad::before{
+        content:"";
+        width:100%;
+        height:2px;
+        position: absolute;
+        bottom:-.5rem ;
+        left:1rem;
+background:#000;
+      }
+      #ad::after {
+        position: absolute;
+        right:0;
+        top:0;
+        content: '"';
+        transform:translate(4rem, -1rem);
+        font-size:2rem;
+      }
+      #mvm::before {
+        content: '"';
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(-5rem, .5rem) rotate(10deg);
+        font-size:4rem;
+      } #mvm::after {
+        content: '"';
+        position: absolute;
+        top:0;
+        left:0;
+        transform:translate(15rem, -1rem) rotate(10deg);
+        font-size:4rem;
+      }
+    </style>
+
+  </body>
+</html>
