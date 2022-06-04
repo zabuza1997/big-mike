@@ -7,6 +7,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="page2.css" />
     <title>Document</title>
+    <style>
+      #ad::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 1rem;
+        background: #000;
+      }
+      #ad::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '"';
+        transform: translate(4rem, -1rem);
+        font-size: 2rem;
+      }
+      #mvm::before {
+        content: '"';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-5rem, 0.5rem) rotate(10deg);
+        font-size: 4rem;
+      }
+      #mvm::after {
+        content: '"';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(15rem, -1rem) rotate(10deg);
+        font-size: 4rem;
+      }
+    </style>
   </head>
   <body class="pt-16 px-8">
     <div
@@ -16,8 +51,7 @@
       <div class="section flex flex-col relative mb-16">
         <div class="section-header">
           <h2
-            class="text-7xl uppercase w-max mx-auto px-4 flex gap-24 bg-white"
-            style="transform: translateY(-2.625rem)"
+            class="text-7xl uppercase w-max mx-auto px-4 flex gap-24 bg-white -translate-y-[2.625rem]"
           >
             <span>artist</span><span>sounds</span>
           </h2>
@@ -56,8 +90,7 @@
       >
         <div class="section-header">
           <h2
-            class="text-5xl uppercase w-max mx-auto bg-white px-4 tracking-widest"
-            style="transform: translateY(-3.75rem)"
+            class="text-5xl uppercase w-max mx-auto bg-white px-4 tracking-widest -translate-y-[3.75rem]"
           >
             references
           </h2>
@@ -79,21 +112,30 @@
       >
         <div class="section-header">
           <h2
-            class="text-5xl uppercase w-max mx-auto bg-white px-4"
-            style="transform: translateY(-1.75rem)"
+            class="text-5xl uppercase w-max mx-auto bg-white px-4 -translate-y-7"
           >
             Videos & Live
           </h2>
         </div>
         <div class="section-content">
           <div class="flex w-full justify-around">
-            <div>
+            <div class="relative">
               <i>Music Video</i>
-              <img src="./img/thumb1.jpg" alt="Thumbnail" />
+              <img src="./img/thumb1.jpg" alt="Thumbnail" class="relative" />
+              <a
+                href="https://www.youtube.com/watch?v=k5_vBapi6aI"
+                class="play-btn absolute top-28 left-48 opacity-70 hover:brightness-200 hover:opacity-100"
+                ><img src="./img/play.png" alt=""
+              /></a>
             </div>
-            <div>
+            <div class="relative">
               <strong>Performance at</strong>
-              <img src="./img/thumb2.jpg" alt="" />
+              <img src="./img/thumb2.jpg" alt="" class="relative" />
+              <a
+                href="https://www.youtube.com/watch?v=snvmfTewNj4"
+                class="play-btn absolute top-28 left-48 opacity-70 hover:brightness-200 hover:opacity-100"
+                ><img src="./img/play.png" alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -105,70 +147,63 @@
       >
         <div class="section-header">
           <h2
-            class="text-5xl uppercase w-max mx-auto bg-white px-4"
-            style="transform: translateY(-1.75rem)"
+            class="text-5xl uppercase w-max mx-auto bg-white px-4 -translate-y-7"
           >
             Artist Socials
           </h2>
         </div>
-        <div class="section-content flex justify-center items-center">
+        <div class="section-content flex justify-center items-center gap-x-6">
           <!--Youtube-->
           <div class="social">
-            <img src="./img/yt.png" alt="" />
+            <a href="https://www.youtube.com/channel/UCGWuIDkLbsAAUHKE5JYyl2w"
+              ><img
+                src="./img/yt.png"
+                alt=""
+                height="90px"
+                width="90px"
+                class="object-contain"
+            /></a>
           </div>
           <!--Spot-->
           <div class="social">
-            <img src="./img/spot.png" alt="" />
+            <a
+              href="https://open.spotify.com/artist/6BdhwWbpyjC09tPwCVTCgy?si=IeTIibrRS8O9xEHNrvt4Ow&nd=1"
+              ><img
+                src="./img/spot.png"
+                alt=""
+                height="90px"
+                width="90px"
+                class="object-cover"
+            /></a>
           </div>
           <!--Insta-->
           <div class="social">
-            <img src="./img/ig.png" alt="" />
+            <a href="https://www.instagram.com/chiefdadagram/?hl=de">
+              <img
+                src="./img/ig.png"
+                alt=""
+                height="90px"
+                width="90px"
+                class="object-contain"
+            /></a>
           </div>
-          <!--Facebook-->
+          <!--Twitter-->
           <div class="social">
-            <img src="./img/fb.png" alt="" height="80px" width="80px" />
+            <a href="https://mobile.twitter.com/chiefansong">
+              <img
+                class=""
+                src="./img/twitter.png"
+                alt=""
+                height="90px"
+                width="90px"
+                class="object-contain"
+            /></a>
           </div>
         </div>
       </div>
-      <div class="management flex align-center items-center">
+      <div class="management text-center text-xl">
         <p>Management: hghlysprtl@gmail.com</p>
       </div>
     </div>
-
-    <style>
-      #ad::before {
-        content: "";
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        bottom: -0.5rem;
-        left: 1rem;
-        background: #000;
-      }
-      #ad::after {
-        position: absolute;
-        right: 0;
-        top: 0;
-        content: '"';
-        transform: translate(4rem, -1rem);
-        font-size: 2rem;
-      }
-      #mvm::before {
-        content: '"';
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(-5rem, 0.5rem) rotate(10deg);
-        font-size: 4rem;
-      }
-      #mvm::after {
-        content: '"';
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(15rem, -1rem) rotate(10deg);
-        font-size: 4rem;
-      }
-    </style>
   </body>
 </html>
